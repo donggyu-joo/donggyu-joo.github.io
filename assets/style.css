@@ -14,7 +14,7 @@ body{overflow-wrap:break-word}.hero>*{min-width:0}
 @media(max-width:620px){.two-column>div+div{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-top:30px}.focus-strip{padding-left:18px;padding-right:18px}}
 
 /* Employer, deployment summary, and contributions have distinct visual levels. */
-.employment{max-width:960px}
+.employment{width:100%}
 .employment-heading{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:24px;margin-bottom:22px}
 .employment-heading h3{font-size:1.25rem;font-weight:600;line-height:1.4;margin:0 0 5px}
 .employment-role{font-size:.9375rem;line-height:1.55;margin:0;color:var(--muted)}
@@ -58,7 +58,7 @@ body{overflow-wrap:break-word}.hero>*{min-width:0}
 .citation-summary{font-size:.8125rem;margin:12px 0 0;color:var(--muted);line-height:1.6}
 .citation-summary a{font-weight:600}
 .citation-source{font-size:.75rem;color:var(--muted);margin:12px 0 24px}
-.education-list,.patent-list{max-width:960px}
+.education-list,.patent-list{width:100%}
 .education-list .education-row{margin:0;padding:22px 0;border-top:1px solid var(--line)}
 .education-list .education-row:first-child{padding-top:0;border-top:0}
 .education-title{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
@@ -67,7 +67,7 @@ body{overflow-wrap:break-word}.hero>*{min-width:0}
 .education-list .thesis{max-width:760px}
 .patent-preview{padding:20px 0;border-top:1px solid var(--line)}
 .patent-preview:first-child{padding-top:0;border-top:0}
-.patent-preview h3{font-size:1rem;max-width:900px}
+.patent-preview h3{font-size:1rem}
 .patent-preview h3 a{color:var(--ink);text-decoration:none}
 .patent-preview h3 a:hover{color:var(--blue);text-decoration:underline}
 .patent-preview p{font-size:.8125rem;color:var(--muted);margin:0}
@@ -76,3 +76,5 @@ body{overflow-wrap:break-word}.hero>*{min-width:0}
 .section-heading>div{min-width:0;max-width:100%}
 
 @media(max-width:620px){.education-title{flex-direction:column;align-items:flex-start;gap:4px}.education-title h3{margin-bottom:0}}
+
+.education-row .education-honor{margin-top:7px;font-size:.8125rem}
