@@ -1,0 +1,24 @@
+{
+  "source": "Google Scholar",
+  "profile_url": "https://scholar.google.com/citations?user=C5ULtbwAAAAJ&hl=en",
+  "checked_on": "2026-10-14",
+  "collected_via": "Profile table pasted by the user; automated access returned HTTP 429.",
+  "total_citations": 2920,
+  "listed_citations_sum": 2920,
+  "publications": {
+    "gift": 2320,
+    "glp": 236,
+    "tivgan": 104,
+    "ekfac": 102,
+    "lrf": 53,
+    "fusion": 53,
+    "rescl": 31,
+    "lcaf": 12,
+    "metrics": 5,
+    "nss": 2,
+    "cartoon": 1,
+    "slimming": 1,
+    "depth": 0
+  },
+  "notes": "The user confirmed the profile All citations total is 2,920 and the blank depth-paper cell represents zero citations. Counts reflect the user-copied Google Scholar profile on 14 October 2026."
+}

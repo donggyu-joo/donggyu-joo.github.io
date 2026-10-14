@@ -1,0 +1,219 @@
+[
+  {
+    "id": "cartoon",
+    "year": 2023,
+    "venue": "ICIP 2023",
+    "title": "Training Cartoonization Network without Cartoon",
+    "authors": [
+      "Doyeon Kim",
+      "Dongyeun Lee",
+      "Donggyu Joo",
+      "Junmo Kim"
+    ],
+    "url": "https://doi.org/10.1109/ICIP49359.2023.10223141",
+    "evidence": "https://resourcecenter.ieee.org/conferences/icip-2023/spsicip23vid0424",
+    "summary": "Learning to cartoonize photographs through regions and edges, without a collected cartoon training dataset."
+  },
+  {
+    "id": "metrics",
+    "year": 2022,
+    "venue": "ICIP 2022",
+    "title": "Which Metrics for Network Pruning: Final Accuracy? Or Accuracy Drop?",
+    "authors": [
+      "Donggyu Joo",
+      "Sunghyun Baek",
+      "Junmo Kim"
+    ],
+    "url": "https://doi.org/10.1109/ICIP46576.2022.9898051",
+    "evidence": "https://pure.kaist.ac.kr/en/publications/which-metrics-for-network-pruning-final-accuracy-or-accuracy-drop/",
+    "summary": "Examining how the choice of baseline changes pruning evaluations, and proposing evaluation across multiple baselines."
+  },
+  {
+    "id": "lcaf",
+    "year": 2022,
+    "venue": "CVPR Workshops 2022 · ECV",
+    "title": "Linear Combination Approximation of Feature for Channel Pruning",
+    "authors": [
+      "Donggyu Joo",
+      "Doyeon Kim",
+      "Eojindl Yi",
+      "Junmo Kim"
+    ],
+    "url": "https://openaccess.thecvf.com/content/CVPR2022W/ECV/html/Joo_Linear_Combination_Approximation_of_Feature_for_Channel_Pruning_CVPRW_2022_paper.html",
+    "pdf": "https://openaccess.thecvf.com/content/CVPR2022W/ECV/papers/Joo_Linear_Combination_Approximation_of_Feature_for_Channel_Pruning_CVPRW_2022_paper.pdf",
+    "summary": "Pruning redundant feature maps using linear approximation and compensating for their removal through weight modification."
+  },
+  {
+    "id": "glp",
+    "year": 2022,
+    "venue": "arXiv preprint · 2022",
+    "title": "Global-Local Path Networks for Monocular Depth Estimation with Vertical CutDepth",
+    "authors": [
+      "Doyeon Kim",
+      "Woonghyun Ka",
+      "Pyungwhan Ahn",
+      "Donggyu Joo",
+      "Sehwan Chun",
+      "Junmo Kim"
+    ],
+    "url": "https://arxiv.org/abs/2201.07436",
+    "pdf": "https://arxiv.org/pdf/2201.07436",
+    "code": "https://github.com/vinvino02/GLPDepth",
+    "summary": "Combining global context and local detail for depth estimation from a single image.",
+    "note": "Author names follow the arXiv abstract record; the PDF contains spelling variants."
+  },
+  {
+    "id": "lrf",
+    "year": 2021,
+    "venue": "AAAI 2021",
+    "title": "Linearly Replaceable Filters for Deep Network Channel Pruning",
+    "authors": [
+      "Donggyu Joo",
+      "Eojindl Yi",
+      "Sunghyun Baek",
+      "Junmo Kim"
+    ],
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/16978",
+    "doi": "10.1609/aaai.v35i9.16978",
+    "pdf": "https://ojs.aaai.org/index.php/AAAI/article/download/16978/16785",
+    "code": "https://github.com/jdg105/linearly-replaceable-filter-pruning",
+    "summary": "Making networks smaller by removing filters that other filters can approximate, then compensating for the removed weights.",
+    "selected": true,
+    "topic": "Model compression"
+  },
+  {
+    "id": "slimming",
+    "year": 2021,
+    "venue": "ICPR 2020",
+    "title": "Slimming ResNet by Slimming Shortcut",
+    "authors": [
+      "Donggyu Joo",
+      "Doyeon Kim",
+      "Junmo Kim"
+    ],
+    "url": "https://doi.org/10.1109/ICPR48806.2021.9413075",
+    "evidence": "https://pure.kaist.ac.kr/en/publications/slimming-resnet-by-slimming-shortcut/",
+    "poster": "https://ailb-web.ing.unimore.it/icpr/media/posters/11805.pdf",
+    "summary": "Enabling channel pruning in both the residual blocks and shortcut connections of ResNet.",
+    "note": "The conference retains the name ICPR 2020; it took place in January 2021."
+  },
+  {
+    "id": "depth",
+    "year": 2021,
+    "venue": "ICPR 2020",
+    "title": "Delivering Meaningful Representation for Monocular Depth Estimation",
+    "authors": [
+      "Doyeon Kim",
+      "Donggyu Joo",
+      "Junmo Kim"
+    ],
+    "url": "https://doi.org/10.1109/ICPR48806.2021.9412108",
+    "evidence": "https://pure.kaist.ac.kr/en/publications/delivering-meaningful-representation-for-monocular-depth-estimati/",
+    "summary": "Connecting encoder and decoder representations to improve monocular depth estimation.",
+    "note": "The conference retains the name ICPR 2020; it took place in January 2021."
+  },
+  {
+    "id": "ekfac",
+    "year": 2020,
+    "venue": "CVPR 2020",
+    "title": "Continual Learning with Extended Kronecker-factored Approximate Curvature",
+    "authors": [
+      "Janghyeon Lee",
+      "Hyeong Gwon Hong",
+      "Donggyu Joo",
+      "Junmo Kim"
+    ],
+    "url": "https://openaccess.thecvf.com/content_CVPR_2020/html/Lee_Continual_Learning_With_Extended_Kronecker-Factored_Approximate_Curvature_CVPR_2020_paper.html",
+    "pdf": "https://openaccess.thecvf.com/content_CVPR_2020/papers/Lee_Continual_Learning_With_Extended_Kronecker-Factored_Approximate_Curvature_CVPR_2020_paper.pdf",
+    "summary": "Accounting for batch normalization in curvature approximation to retain knowledge when learning new tasks.",
+    "selected": true,
+    "topic": "Continual learning"
+  },
+  {
+    "id": "rescl",
+    "year": 2020,
+    "venue": "AAAI 2020",
+    "title": "Residual Continual Learning",
+    "authors": [
+      "Janghyeon Lee",
+      "Donggyu Joo",
+      "Hyeong Gwon Hong",
+      "Junmo Kim"
+    ],
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/5884",
+    "doi": "10.1609/aaai.v34i04.5884",
+    "pdf": "https://ojs.aaai.org/index.php/AAAI/article/download/5884/5740",
+    "summary": "Balancing old and new tasks through network reparameterization without increasing network size.",
+    "selected": true,
+    "topic": "Continual learning"
+  },
+  {
+    "id": "tivgan",
+    "year": 2020,
+    "venue": "IEEE Access · 2020",
+    "title": "TiVGAN: Text to Image to Video Generation with Step-by-Step Evolutionary Generator",
+    "authors": [
+      "Doyeon Kim",
+      "Donggyu Joo",
+      "Junmo Kim"
+    ],
+    "equal": [
+      0,
+      1
+    ],
+    "url": "https://doi.org/10.1109/ACCESS.2020.3017881",
+    "pdf": "https://arxiv.org/pdf/2009.02018",
+    "summary": "Progressively training a generator from individual frames to text-conditioned video."
+  },
+  {
+    "id": "fusion",
+    "year": 2018,
+    "venue": "CVPR 2018",
+    "title": "Generating a Fusion Image: One’s Identity and Another’s Shape",
+    "authors": [
+      "Donggyu Joo",
+      "Doyeon Kim",
+      "Junmo Kim"
+    ],
+    "equal": [
+      0,
+      1
+    ],
+    "url": "https://openaccess.thecvf.com/content_cvpr_2018/html/Joo_Generating_a_Fusion_CVPR_2018_paper.html",
+    "pdf": "https://openaccess.thecvf.com/content_cvpr_2018/papers/Joo_Generating_a_Fusion_CVPR_2018_paper.pdf",
+    "summary": "Generating an image that combines the identity of one input with the shape of another, without paired supervision.",
+    "selected": true,
+    "topic": "Generative modeling"
+  },
+  {
+    "id": "nss",
+    "year": 2018,
+    "venue": "BMVC 2018",
+    "title": "Unconstrained Control of Feature Map Size Using Non-integer Strided Sampling",
+    "authors": [
+      "Donggyu Joo",
+      "Junho Yim",
+      "Junmo Kim"
+    ],
+    "url": "http://bmvc2018.org/contents/papers/0058.pdf",
+    "pdf": "http://bmvc2018.org/contents/papers/0058.pdf",
+    "summary": "Allowing more flexible feature-map sizes through non-integer strided sampling."
+  },
+  {
+    "id": "gift",
+    "year": 2017,
+    "venue": "CVPR 2017",
+    "title": "A Gift from Knowledge Distillation: Fast Optimization, Network Minimization and Transfer Learning",
+    "authors": [
+      "Junho Yim",
+      "Donggyu Joo",
+      "Jihoon Bae",
+      "Junmo Kim"
+    ],
+    "url": "https://openaccess.thecvf.com/content_cvpr_2017/html/Yim_A_Gift_From_CVPR_2017_paper.html",
+    "pdf": "https://openaccess.thecvf.com/content_cvpr_2017/papers/Yim_A_Gift_From_CVPR_2017_paper.pdf",
+    "summary": "Transferring relationships between intermediate features to support training, network compression, and transfer learning.",
+    "selected": true,
+    "topic": "Knowledge distillation"
+  }
+]

@@ -1,0 +1,186 @@
+[
+  {
+    "id": "us-class",
+    "title": "Neural Network Learning Method and Device for Recognizing Class",
+    "country": "United States",
+    "status": "Granted patent",
+    "inventors": [
+      "Jun-mo Kim",
+      "Byung-ju Kim",
+      "Joo-chang Kim",
+      "Ye-gang Lee",
+      "Min-seok Park",
+      "Ju-seung Yun",
+      "Jae-young Lee",
+      "Dong-gyu Joo"
+    ],
+    "application": "16/645,344",
+    "publication": "US 2020/0285938 A1",
+    "grant": "US 11,449,733 B2",
+    "dates": {
+      "PCT filing": "4 September 2018",
+      "US national-stage date": "6 March 2020",
+      "Application publication": "10 September 2020",
+      "Grant": "20 September 2022"
+    },
+    "url": "https://patents.google.com/patent/US11449733B2/en",
+    "official": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11449733",
+    "verification": "USPTO original grant PDF, first page, inspected visually."
+  },
+  {
+    "id": "us-image",
+    "title": "Electronic Device for Processing Image and Operating Method Thereof",
+    "country": "United States",
+    "status": "Published application",
+    "inventors": [
+      "Donggyu Joo",
+      "Dongchan Kim",
+      "Jinyoung Hwang"
+    ],
+    "application": "19/018,385",
+    "publication": "US 2025/0292376 A1",
+    "dates": {
+      "Filed": "13 January 2025",
+      "Published": "18 September 2025"
+    },
+    "url": "https://patents.google.com/patent/US20250292376A1/en",
+    "official": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20250292376",
+    "verification": "USPTO original application PDF, first page, inspected visually. Priority is KR 10-2024-0037391; do not merge with KR 10-2024-0088511."
+  },
+  {
+    "id": "kr-device",
+    "title": "Electronic Device and Operating Method for the Same",
+    "country": "Republic of Korea",
+    "status": "Published application",
+    "inventors": [
+      "Sangwon Lee",
+      "Sahngmin Yoo",
+      "Donggyu Joo",
+      "Jiman Kim",
+      "Jinyoung Hwang"
+    ],
+    "application": "10-2024-0114486",
+    "publication": "KR 10-2026-0029843 A",
+    "dates": {
+      "Filed": "26 August 2024",
+      "Published": "5 March 2026"
+    },
+    "url": "https://patents.google.com/patent/KR20260029843A/en",
+    "verification": "Official KIPRIS KPA full detail record opened (not a search snippet): title, complete ordered inventor list, Korean application number, filing date, A-type publication number and publication date match. Google Patents full record cross-checked. No grant asserted.",
+    "official_record": "https://www.kipris.or.kr/kpa/biblioa.do?method=biblioMain_biblio&key=KR%2C202600029843A0"
+  },
+  {
+    "id": "kr-image",
+    "title": "Electronic Device Processing Image and Method of Operating the Same",
+    "country": "Republic of Korea",
+    "status": "Published application",
+    "inventors": [
+      "Donggyu Joo",
+      "Dongchan Kim",
+      "Jinyoung Hwang"
+    ],
+    "application": "10-2024-0088511",
+    "publication": "KR 10-2026-0006373 A",
+    "dates": {
+      "Filed": "4 July 2024",
+      "Published": "13 January 2026"
+    },
+    "url": "https://patents.google.com/patent/KR20260006373A/en",
+    "verification": "Official KIPRIS KPA full detail record opened (not a search snippet): title, complete ordered inventor list, Korean application number, filing date, A-type publication number and publication date match. Google Patents full record cross-checked. No grant asserted.",
+    "official_record": "https://www.kipris.or.kr/kpa/biblioa.do?method=biblioMain_biblio&key=KR%2C202600006373A0"
+  },
+  {
+    "id": "kr-touch",
+    "title": "Electronic Apparatus for Identifying Abnormal Touch and Control Method Thereof",
+    "country": "Republic of Korea",
+    "status": "Published application",
+    "inventors": [
+      "Donggyu Joo",
+      "Jinyoung Hwang"
+    ],
+    "application": "10-2024-0009651",
+    "publication": "KR 10-2025-0114797 A",
+    "dates": {
+      "Filed": "22 January 2024",
+      "Published": "29 July 2025"
+    },
+    "url": "https://patents.google.com/patent/KR20250114797A/en",
+    "verification": "Official KIPRIS KPA full detail record opened (not a search snippet): title, complete ordered inventor list, Korean application number, filing date, A-type publication number and publication date match. Google Patents full record cross-checked. No grant asserted.",
+    "official_record": "https://www.kipris.or.kr/kpa/biblioa.do?method=biblioMain_biblio&key=KR%2C202500114797A0"
+  },
+  {
+    "id": "kr-transfer",
+    "title": "Knowledge Transfer Method Using Deep Neural Network and Apparatus Therefor",
+    "country": "Republic of Korea",
+    "status": "Granted patent",
+    "inventors": [
+      "Junmo Kim",
+      "Junho Yim",
+      "Donggyu Joo"
+    ],
+    "application": "10-2017-0102269",
+    "publication": "KR 10-2018-0096469 A",
+    "grant": "KR 10-2061935 B1",
+    "dates": {
+      "Filed": "11 August 2017",
+      "Application publication": "29 August 2018",
+      "Registered": "26 December 2019",
+      "Grant publication": "2 January 2020"
+    },
+    "url": "https://patents.google.com/patent/KR102061935B1/en",
+    "gazette": "https://patentimages.storage.googleapis.com/89/4c/18/27d4776bf8ce29/KR102061935B1.pdf",
+    "verification": "KIPO original gazette PDF via Google Patents mirror. Registration date taken from field (24), not Google timeline."
+  },
+  {
+    "id": "kr-sharing",
+    "title": "Knowledge Sharing Based Knowledge Transfer Method for Improving Quality of Knowledge and Apparatus Therefor",
+    "country": "Republic of Korea",
+    "status": "Granted patent",
+    "inventors": [
+      "Junmo Kim",
+      "Junho Yim",
+      "Donggyu Joo",
+      "Jihoon Bae",
+      "Naesoo Kim",
+      "Chulsik Pyo"
+    ],
+    "application": "10-2017-0117000",
+    "publication": "KR 10-2018-0096473 A",
+    "grant": "KR 10-2063376 B1",
+    "dates": {
+      "Filed": "13 September 2017",
+      "Application publication": "29 August 2018",
+      "Registered": "31 December 2019",
+      "Grant publication": "7 January 2020"
+    },
+    "url": "https://patents.google.com/patent/KR102063376B1/en",
+    "gazette": "https://patentimages.storage.googleapis.com/de/9d/45/42905ed94d718d/KR102063376B1.pdf",
+    "verification": "KIPO original gazette PDF via Google Patents mirror, first two pages."
+  },
+  {
+    "id": "kr-incremental",
+    "title": "Incremental Training Based Knowledge Transfer Method for Training Large Deep Neural Networks and Apparatus Therefor",
+    "country": "Republic of Korea",
+    "status": "Granted patent",
+    "inventors": [
+      "Junmo Kim",
+      "Junho Yim",
+      "Donggyu Joo",
+      "Jihoon Bae",
+      "Naesoo Kim",
+      "Chulsik Pyo"
+    ],
+    "application": "10-2017-0117001",
+    "publication": "KR 10-2018-0096474 A",
+    "grant": "KR 10-2063377 B1",
+    "dates": {
+      "Filed": "13 September 2017",
+      "Application publication": "29 August 2018",
+      "Registered": "31 December 2019",
+      "Grant publication": "7 January 2020"
+    },
+    "url": "https://patents.google.com/patent/KR102063377B1/en",
+    "gazette": "https://patentimages.storage.googleapis.com/fb/51/28/338812749e313a/KR102063377B1.pdf",
+    "verification": "KIPO original gazette PDF via Google Patents mirror, first two pages."
+  }
+]
