@@ -48,3 +48,6 @@ body{overflow-wrap:break-word}.hero>*{min-width:0}
  .contribution-label{margin-top:22px}
  .contribution-row{padding-top:12px}
 }
+
+.profile-links{display:flex;align-items:center;flex-wrap:wrap;gap:22px}
+@media(max-width:620px){.profile-links{gap:16px}}
