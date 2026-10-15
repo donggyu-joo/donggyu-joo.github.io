@@ -3,6 +3,7 @@ import json
 import hashlib
 import re
 from pathlib import Path
+from datetime import datetime
 from html import escape as e
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -16,6 +17,10 @@ if site_code and not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', site_code):
 
 def link(url,label,cls=''):
     return f'<a href="{e(url,quote=True)}"'+(f' class="{cls}"' if cls else '')+f'>{label}</a>'
+
+def display_date(value):
+    date=datetime.strptime(value, '%d %B %Y')
+    return f'{date.day} {date:%b %Y}'
 
 def document(title,description,body,current=''):
     tracking=(f'<script data-goatcounter="https://{site_code}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>' if site_code else '')
@@ -45,7 +50,7 @@ def publication(p,archive=False):
         if p.get(key) and p[key]!=p['url']:links.append(link(p[key],label))
     count=scholar['publications'].get(p['id'])
     count_label='citation' if count==1 else 'citations'
-    citation=f'<span class="citation-count" title="Google Scholar · 14 October 2026">{count:,} {count_label}</span>' if count is not None else ''
+    citation=f'<span class="citation-count" title="Google Scholar · 14 Oct 2026">{count:,} {count_label}</span>' if count is not None else ''
     topic=f'<span class="topic">{e(p["topic"])}</span>' if 'topic' in p and not archive else ''
     return f'''<article class="pub" id="{p['id']}"><div class="venue">{e(p['venue'])}{topic}</div><div><div class="pub-heading"><h3>{link(p['url'],e(p['title']))}</h3>{citation}</div><p class="authors">{authors(p)}</p><p class="summary">{e(p['summary'])}</p><div class="links">{''.join(links)}</div></div></article>'''
 
@@ -59,7 +64,7 @@ home=f'''
 <article class="employment">
 <header class="employment-heading">
 <div><h3>Samsung Research</h3><p class="employment-role">Senior Machine Learning Scientist · Samsung Electronics</p></div>
-<p class="employment-meta">September 2022 – Present<span>Seoul, South Korea</span></p>
+<p class="employment-meta">Sep 2022 – Present<span>Seoul, South Korea</span></p>
 </header>
 <div class="employment-impact" aria-label="Production deployment">
 <div class="impact-stat"><p class="impact-count">8 models shipped</p><p class="impact-label">On-device AI · Galaxy devices</p></div>
@@ -76,10 +81,10 @@ home=f'''
 </section>
 <section class="section" id="publications"><div class="section-heading"><div><h2>Selected publications</h2>{citation_summary()}</div><a href="publications.html">All publications (13)</a></div><div>{selected}</div><p class="small-note">* Equal contribution.</p></section>
 <section class="section" id="education" aria-labelledby="education-heading"><div class="section-heading"><h2 id="education-heading">Education</h2></div><div class="education-list">
-<article class="education-row"><div class="education-title"><div class="education-identity"><h3>Ph.D. in Electrical Engineering</h3><p class="education-school">KAIST</p></div><p class="education-years">2018.02–2022.08</p></div><p class="thesis"><span>Thesis:</span> Effective Deep Neural Network Compression Based on the Network Pruning</p><p>Advisor: Prof. Junmo Kim</p></article>
-<article class="education-row"><div class="education-title"><div class="education-identity"><h3>M.S. in Electrical Engineering</h3><p class="education-school">KAIST</p></div><p class="education-years">2016.09–2018.02</p></div><p class="thesis"><span>Thesis:</span> Unconstrained Control of Feature Map Size Using Non-integer Strided Sampling</p><p>Advisor: Prof. Junmo Kim</p></article>
-<article class="education-row"><div class="education-title"><div class="education-identity"><h3>B.S. in Electrical Engineering</h3><p class="education-school">KAIST</p></div><p class="education-years">2013.03–2016.08</p></div><p class="education-honor">Summa Cum Laude</p></article>
-<article class="education-row"><div class="education-title"><div class="education-identity"><h3>High School</h3><p class="education-school">Korea Science Academy of KAIST (KSA)</p></div><p class="education-years">2010.02–2013.02</p></div></article>
+<article class="education-row"><div class="education-title"><div class="education-identity"><h3>Ph.D. in Electrical Engineering</h3><p class="education-school">KAIST</p></div><p class="education-years">Feb 2018 – Aug 2022</p></div><p class="thesis"><span>Thesis:</span> Effective Deep Neural Network Compression Based on the Network Pruning</p><p>Advisor: Prof. Junmo Kim</p></article>
+<article class="education-row"><div class="education-title"><div class="education-identity"><h3>M.S. in Electrical Engineering</h3><p class="education-school">KAIST</p></div><p class="education-years">Sep 2016 – Feb 2018</p></div><p class="thesis"><span>Thesis:</span> Unconstrained Control of Feature Map Size Using Non-integer Strided Sampling</p><p>Advisor: Prof. Junmo Kim</p></article>
+<article class="education-row"><div class="education-title"><div class="education-identity"><h3>B.S. in Electrical Engineering</h3><p class="education-school">KAIST</p></div><p class="education-years">Mar 2013 – Aug 2016</p></div><p class="education-honor">Summa Cum Laude</p></article>
+<article class="education-row"><div class="education-title"><div class="education-identity"><h3>High School</h3><p class="education-school">Korea Science Academy of KAIST (KSA)</p></div><p class="education-years">Feb 2010 – Feb 2013</p></div></article>
 </div></section>
 <section class="section" id="patents" aria-labelledby="patents-heading"><div class="section-heading"><h2 id="patents-heading">Patents</h2><a href="patents.html">Patent details</a></div><div class="patent-list">{patent_previews}</div></section>
 <section class="contact" id="contact"><div><h2>Contact</h2></div><div class="links"><a href="mailto:jdg10126@gmail.com">jdg10126@gmail.com</a><a href="https://www.linkedin.com/in/donggyu-joo-a0a8ba22b/">LinkedIn</a></div></section>'''
@@ -89,21 +94,21 @@ body='<div class="page-intro"><p class="eyebrow">Research</p><h1>Publications</h
 body+=citation_summary()
 for year in sorted({p['year'] for p in pubs},reverse=True):
     body+=f'<section class="year-block" aria-labelledby="year-{year}"><h2 id="year-{year}">{year}</h2><div>'+''.join(publication(p,True) for p in pubs if p['year']==year)+'</div></section>'
-body+='<p class="small-note archive-end">Publication metadata checked against papers, publisher records, and institutional records; links rechecked on 14 October 2026.</p>'
+body+='<p class="small-note archive-end">Publication metadata checked against papers, publisher records, and institutional records; links rechecked on 14 Oct 2026.</p>'
 (ROOT/'publications.html').write_text(document('Publications | Donggyu Joo','Publications by Donggyu Joo on model compression, computer vision, continual learning, and generative modeling.',body,'publications'))
 
 body='<div class="page-intro"><p class="eyebrow">Inventions</p><h1>Patent details</h1><p>Inventors, application and publication numbers, dates, and official records.</p></div>'
 for p in patents:
     fields=[('Inventors',', '.join(p['inventors'])),('Country',p['country']),('Application',p['application']),('Publication',p['publication'])]
     if p.get('grant'):fields.append(('Grant number',p['grant']))
-    fields+=list(p['dates'].items())
+    fields += [(label, display_date(value)) for label, value in p['dates'].items()]
     links=[link(p['url'],'Patent record')]
     if p.get('official'):links.append(link(p['official'],'USPTO original PDF'))
     if p.get('official_record'):links.append(link(p['official_record'],'KIPRIS metadata'))
     if p.get('gazette'):links.append(link(p['gazette'],'Original gazette PDF'))
     note='<p class="small-note">Bibliographic details from Google Patents. Official gazette verification is pending.</p>' if p.get('limited') else ''
     body+=f'<article class="patent" id="{p["id"]}"><span class="status">{e(p["country"])} · {e(p["status"])}</span><h2>{e(p["title"])}</h2><dl>'+''.join(f'<dt>{e(k)}</dt><dd>{e(v)}</dd>' for k,v in fields)+'</dl><div class="links">'+''.join(links)+'</div>'+note+'</article>'
-body+='<p class="small-note archive-end">Korean titles are provided in English translation; inventor romanizations follow the CV. Registration and gazette publication dates are shown separately. Records reviewed on 8 October 2026.</p>'
+body+='<p class="small-note archive-end">Korean titles are provided in English translation; inventor romanizations follow the CV. Registration and gazette publication dates are shown separately. Records reviewed on 8 Oct 2026.</p>'
 (ROOT/'patents.html').write_text(document('Patent details | Donggyu Joo','Public patent records for inventions by Donggyu Joo in neural network learning, knowledge transfer, and image processing.',body,'patents'))
 (ROOT/'404.html').write_text(document('Page not found | Donggyu Joo','Page not found.','<div class="page-intro"><p class="eyebrow">404</p><h1>Page not found</h1><p>The page may have moved.</p><a href="index.html">Return to the homepage</a></div>'))
 print(f'Built 4 pages, {len(pubs)} publications, {len(patents)} patent records.')
