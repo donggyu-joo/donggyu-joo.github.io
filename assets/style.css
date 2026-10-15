@@ -84,3 +84,7 @@ body{overflow-wrap:break-word}.hero>*{min-width:0}
 
 /* Slightly stronger prose contrast; secondary metadata keeps its quieter tone. */
 .hero .bio,.summary,.contribution-row p,.education-row .thesis{color:var(--text)}
+
+/* Separate current product work from the research background. */
+.hero .bio p{margin:0}
+.hero .bio p+p{margin-top:14px}
