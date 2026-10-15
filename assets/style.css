@@ -66,6 +66,7 @@ body{overflow-wrap:break-word}.hero>*{min-width:0}
 .education-years{white-space:nowrap;text-align:right}
 .education-title h3{min-width:0}
 .education-title p{font-size:.8125rem}
+.education-row .education-school{font-size:.9375rem;font-weight:600;color:var(--text)}
 .education-list .thesis{max-width:760px}
 .patent-preview{padding:20px 0;border-top:1px solid var(--line)}
 .patent-preview:first-child{padding-top:0;border-top:0}
