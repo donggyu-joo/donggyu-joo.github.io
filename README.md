@@ -70,3 +70,17 @@ HTML 빌드는 PDF를 생성하거나 수정하지 않습니다.
 Scholar 인용수는 2026-10-14에 확인한 스냅샷이며 자동 갱신되지 않습니다.
 날짜 표시는 `scripts/build.py`에도 있으므로 인용수 갱신 시 함께 수정합니다.
 추가 개인정보, 회사 내부 자료, 인증 정보는 이 공개 저장소에 넣지 않습니다.
+
+## 방문 통계 (GoatCounter)
+
+`data/analytics.json`의 `goatcounter_site_code`에 가입 후 발급받은 사이트 코드를 넣습니다.
+예를 들어 대시보드 주소가 `https://example.goatcounter.com`이면 값은 `example`입니다.
+빈 문자열이면 분석 스크립트를 넣지 않습니다.
+코드 변경 후 `python3 scripts/build.py`로 HTML을 생성하고 함께 커밋·push합니다.
+
+모든 페이지의 방문과 CV 다운로드 링크 클릭을 집계합니다.
+`cv-download`는 링크 클릭 이벤트로, 파일 다운로드 완료를 의미하지는 않습니다.
+통계는 GoatCounter 대시보드에서 확인하며 사이트 화면에는 카운터를 표시하지 않습니다.
+비밀번호와 API 키는 사이트 코드에 필요하지 않으며 저장소에 넣지 않습니다.
+통계를 비공개로 유지하려면 GoatCounter의 공개 대시보드 옵션을 끕니다.
+본인 방문 제외 방법: https://www.goatcounter.com/help/skip-dev

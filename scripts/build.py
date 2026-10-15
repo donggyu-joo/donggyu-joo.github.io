@@ -1,6 +1,7 @@
-"""Build portable, JavaScript-free HTML. Run from any directory with Python 3."""
+"""Build portable static HTML with optional analytics. Run from any directory with Python 3."""
 import json
 import hashlib
+import re
 from pathlib import Path
 from html import escape as e
 
@@ -8,18 +9,23 @@ ROOT=Path(__file__).resolve().parents[1]
 pubs=json.loads((ROOT/'data/publications.json').read_text())
 patents=json.loads((ROOT/'data/patents.json').read_text())
 scholar=json.loads((ROOT/'data/scholar-citations.json').read_text())
+analytics=json.loads((ROOT/'data/analytics.json').read_text())
+site_code=analytics.get('goatcounter_site_code', '')
+if site_code and not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', site_code):
+    raise ValueError('Invalid GoatCounter site code')
 
 def link(url,label,cls=''):
     return f'<a href="{e(url,quote=True)}"'+(f' class="{cls}"' if cls else '')+f'>{label}</a>'
 
 def document(title,description,body,current=''):
+    tracking=(f'<script data-goatcounter="https://{site_code}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>' if site_code else '')
     css_version=hashlib.sha256((ROOT/'assets/style.css').read_bytes()).hexdigest()[:12]
     nav=[('index.html#about','About','about'),('index.html#experience','Experience','experience'),('publications.html','Publications','publications'),('patents.html','Patents','patents'),('index.html#contact','Contact','contact')]
     links=''.join(f'<a href="{url}"'+(' aria-current="page"' if key==current else '')+f'>{label}</a>' for url,label,key in nav)
     return f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{e(title)}</title><meta name="description" content="{e(description,quote=True)}"><meta name="theme-color" content="#244f9d"><meta property="og:title" content="{e(title,quote=True)}"><meta property="og:description" content="{e(description,quote=True)}"><meta property="og:type" content="website"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/style.css?v={css_version}"></head>
-<body><a class="skip" href="#main">Skip to content</a><header class="header"><div class="wrap nav"><a class="brand" href="index.html">Donggyu Joo <span>주동규</span></a><nav class="nav-links" aria-label="Main navigation">{links}<a class="nav-cv" href="assets/CV_DonggyuJoo.pdf" download>CV PDF</a></nav></div></header>
-<main id="main" class="wrap">{body}</main><footer class="wrap footer"><span>© 2026 Donggyu Joo</span><span>Computer vision · Efficient machine learning · On-device AI</span></footer></body></html>'''
+<body><a class="skip" href="#main">Skip to content</a><header class="header"><div class="wrap nav"><a class="brand" href="index.html">Donggyu Joo <span>주동규</span></a><nav class="nav-links" aria-label="Main navigation">{links}<a class="nav-cv" href="assets/CV_DonggyuJoo.pdf" download data-goatcounter-click="cv-download" data-goatcounter-title="CV download click">CV PDF</a></nav></div></header>
+<main id="main" class="wrap">{body}</main><footer class="wrap footer"><span>© 2026 Donggyu Joo</span><span>Computer vision · Efficient machine learning · On-device AI</span></footer>{tracking}</body></html>'''
 
 def authors(p):
     result=[]
@@ -46,7 +52,7 @@ def publication(p,archive=False):
 selected=''.join(publication(p) for p in pubs if p.get('selected'))
 patent_previews=''.join(f'<article class="patent-preview"><h3>{link("patents.html#"+p["id"], e(p["title"]))}</h3><p>{e(p.get("grant",p["publication"]))} · {e(p["status"])}</p></article>' for p in patents)
 home=f'''
-<section class="hero" id="about" aria-labelledby="name"><div class="hero-copy"><p class="eyebrow">Computer vision &amp; efficient machine learning</p><h1 id="name">Donggyu Joo</h1><p class="role">Senior Machine Learning Scientist · Samsung Research</p><p class="bio">At Samsung Research, I develop computer vision models for Galaxy devices, including model optimization, deployment, and edge-case debugging. My research has covered image and video generation, depth estimation, and model compression. I received my Ph.D. in Electrical Engineering from KAIST.</p><div class="links"><a class="button" href="assets/CV_DonggyuJoo.pdf" download>Download CV</a><div class="profile-links"><a href="mailto:jdg10126@gmail.com">Email</a><a href="https://www.linkedin.com/in/donggyu-joo-a0a8ba22b/">LinkedIn</a><a href="https://scholar.google.com/citations?user=C5ULtbwAAAAJ&amp;hl=en">Google Scholar</a></div></div></div><figure class="portrait"><img src="assets/donggyu-joo.jpg" width="200" height="255" alt="Portrait of Donggyu Joo" fetchpriority="high"><figcaption>Seoul, South Korea</figcaption></figure></section>
+<section class="hero" id="about" aria-labelledby="name"><div class="hero-copy"><p class="eyebrow">Computer vision &amp; efficient machine learning</p><h1 id="name">Donggyu Joo</h1><p class="role">Senior Machine Learning Scientist · Samsung Research</p><p class="bio">At Samsung Research, I develop computer vision models for Galaxy devices, including model optimization, deployment, and edge-case debugging. My research has covered image and video generation, depth estimation, and model compression. I received my Ph.D. in Electrical Engineering from KAIST.</p><div class="links"><a class="button" href="assets/CV_DonggyuJoo.pdf" download data-goatcounter-click="cv-download" data-goatcounter-title="CV download click">Download CV</a><div class="profile-links"><a href="mailto:jdg10126@gmail.com">Email</a><a href="https://www.linkedin.com/in/donggyu-joo-a0a8ba22b/">LinkedIn</a><a href="https://scholar.google.com/citations?user=C5ULtbwAAAAJ&amp;hl=en">Google Scholar</a></div></div></div><figure class="portrait"><img src="assets/donggyu-joo.jpg" width="200" height="255" alt="Portrait of Donggyu Joo" fetchpriority="high"><figcaption>Seoul, South Korea</figcaption></figure></section>
 <div class="focus-strip" aria-label="Research and engineering focus"><div><p class="label">Computer vision</p><p class="value">Experience across tasks &amp; domains</p></div><div><p class="label">Model efficiency</p><p class="value">Compression &amp; optimization</p></div><div><p class="label">Product experience</p><p class="value">Deployment &amp; edge-case handling</p></div></div>
 <section class="section" id="experience" aria-labelledby="experience-heading">
 <div class="section-heading"><h2 id="experience-heading">Experience</h2></div>
