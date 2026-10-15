@@ -36,10 +36,10 @@ for s in [
  'Lead a team of six engineers across data, modeling, evaluation, and release in collaboration with product and engineering teams.']:
  add('• '+s)
 add('Education','Section')
-add('<b>KAIST - Ph.D. in Electrical Engineering</b> | March 2018 - August 2022<br/>Thesis: Effective Deep Neural Network Compression Based on the Network Pruning<br/>Advisor: Prof. Junmo Kim')
+add('<b>KAIST - Ph.D. in Electrical Engineering</b> | February 2018 - August 2022<br/>Thesis: Effective Deep Neural Network Compression Based on the Network Pruning<br/>Advisor: Prof. Junmo Kim')
 add('<b>KAIST - M.S. in Electrical Engineering</b> | September 2016 - February 2018<br/>Thesis: Unconstrained Control of Feature Map Size Using Non-integer Strided Sampling<br/>Advisor: Prof. Junmo Kim')
-add('<b>KAIST - B.S. in Electrical Engineering</b> | February 2013 - August 2016<br/>Summa Cum Laude')
-add('<b>High School</b><br/>Korea Science Academy of KAIST (KSA) | 2010 - 2013')
+add('<b>KAIST - B.S. in Electrical Engineering</b> | March 2013 - August 2016<br/>Summa Cum Laude')
+add('<b>High School</b><br/>Korea Science Academy of KAIST (KSA) | February 2010 - February 2013')
 add('Skills','Section')
 add('Python, PyTorch, TensorFlow, TFLite, Git; model optimization, quantization, distillation, data curation, robustness evaluation, and on-device deployment.')
 story.append(PageBreak())
