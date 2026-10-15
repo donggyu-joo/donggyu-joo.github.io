@@ -72,7 +72,7 @@ home=f'''
 </div>
 <p class="contribution-label">Selected contributions</p>
 <div class="contribution-list">
-<section class="contribution-row"><h4>Gallery Search</h4><p>Visual recognition and image–text retrieval for semantic photo search. Work spans multimodal data curation, labeling and filtering, model training, evaluation, and on-device deployment.</p></section>
+<section class="contribution-row"><h4>Gallery search</h4><p>Visual recognition and image–text retrieval for semantic photo search. Work spans multimodal data curation, labeling and filtering, model training, evaluation, and on-device deployment.</p></section>
 <section class="contribution-row"><h4>Unintended touch detection</h4><p>Sequential models for pocket-touch detection, optimized for real-time inference on mobile CPUs.</p></section>
 <section class="contribution-row"><h4>Model efficiency &amp; reliability</h4><p>Model optimization, TFLite conversion, latency tuning, device validation, and debugging of real-world edge cases.</p></section>
 <section class="contribution-row"><h4>Technical leadership</h4><p>Lead a team of 6 engineers. Technical coordination across data, modeling, evaluation, and release with product and engineering teams.</p></section>
@@ -83,8 +83,8 @@ home=f'''
 <section class="section" id="education" aria-labelledby="education-heading"><div class="section-heading"><h2 id="education-heading">Education</h2></div><div class="education-list">
 <article class="education-row"><div class="education-title"><div class="education-identity"><h3>Ph.D. in Electrical Engineering</h3><p class="education-school">KAIST</p></div><p class="education-years">Feb 2018 – Aug 2022</p></div><p class="thesis"><span>Thesis:</span> Effective Deep Neural Network Compression Based on the Network Pruning</p><p>Advisor: Prof. Junmo Kim</p></article>
 <article class="education-row"><div class="education-title"><div class="education-identity"><h3>M.S. in Electrical Engineering</h3><p class="education-school">KAIST</p></div><p class="education-years">Sep 2016 – Feb 2018</p></div><p class="thesis"><span>Thesis:</span> Unconstrained Control of Feature Map Size Using Non-integer Strided Sampling</p><p>Advisor: Prof. Junmo Kim</p></article>
-<article class="education-row"><div class="education-title"><div class="education-identity"><h3>B.S. in Electrical Engineering</h3><p class="education-school">KAIST</p></div><p class="education-years">Mar 2013 – Aug 2016</p></div><p class="education-honor">Summa Cum Laude</p></article>
-<article class="education-row"><div class="education-title"><div class="education-identity"><h3>High School</h3><p class="education-school">Korea Science Academy of KAIST (KSA)</p></div><p class="education-years">Feb 2010 – Feb 2013</p></div></article>
+<article class="education-row"><div class="education-title"><div class="education-identity"><h3>B.S. in Electrical Engineering</h3><p class="education-school">KAIST</p></div><p class="education-years">Mar 2013 – Aug 2016</p></div><p class="education-honor">Summa cum laude</p></article>
+<article class="education-row"><div class="education-title"><div class="education-identity"><h3>High school</h3><p class="education-school">Korea Science Academy of KAIST (KSA)</p></div><p class="education-years">Feb 2010 – Feb 2013</p></div></article>
 </div></section>
 <section class="section" id="patents" aria-labelledby="patents-heading"><div class="section-heading"><h2 id="patents-heading">Patents</h2><a href="patents.html">Patent details</a></div><div class="patent-list">{patent_previews}</div></section>
 <section class="contact" id="contact"><div><h2>Contact</h2></div><div class="links"><a href="mailto:jdg10126@gmail.com">jdg10126@gmail.com</a><a href="https://www.linkedin.com/in/donggyu-joo-a0a8ba22b/">LinkedIn</a></div></section>'''
