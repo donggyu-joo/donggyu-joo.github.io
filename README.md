@@ -23,7 +23,7 @@ cd donggyu-joo.github.io
 | 논문 정보와 링크 | `data/publications.json` |
 | 특허 정보와 링크 | `data/patents.json` |
 | Scholar 인용수와 확인 날짜 | `data/scholar-citations.json` |
-| 공개용 CV의 문구와 구성 | `scripts/build_cv.py` |
+| 다운로드용 CV | `assets/CV_DonggyuJoo.pdf` (제공받은 원본 PDF) |
 
 수정 후 HTML을 다시 생성합니다. HTML 빌드에는 Python 표준 라이브러리만 사용합니다.
 
@@ -58,21 +58,13 @@ git push origin main
 Push하면 GitHub Pages가 다시 배포합니다. 저장소의 **Actions** 탭에서 배포 성공을 확인한 뒤
 실제 사이트를 새로고침하세요. 캐시가 남으면 강력 새로고침을 사용합니다.
 
-## 공개용 CV
+## 다운로드용 CV
 
-기존 공개 PDF는 `assets/Donggyu_Joo_Public_CV.pdf`에 포함되어 있습니다.
-재생성이 필요한 경우에만 ReportLab을 설치합니다.
+`assets/CV_DonggyuJoo.pdf`는 사용자가 제공한 원본 PDF이며, 내용이나 서식을 수정하지 않습니다.
+새 CV를 반영할 때는 이 파일을 새 원본으로 교체하고 커밋·push하면 됩니다.
+HTML 빌드는 PDF를 생성하거나 수정하지 않습니다.
+홈페이지의 경력·학력은 `scripts/build.py`에서 별도로 관리합니다.
 
-```sh
-python3 -m venv .venv
-# macOS/Linux
-. .venv/bin/activate
-# Windows PowerShell: .venv\Scripts\Activate.ps1
-python -m pip install reportlab
-python scripts/build_cv.py
-```
-
-HTML과 CV의 경력·학력 문구는 별도 스크립트에 있으므로, 내용 변경 시 둘 다 확인하세요.
 Scholar 인용수는 2026-10-14에 확인한 스냅샷이며 자동 갱신되지 않습니다.
 날짜 표시는 `scripts/build.py`에도 있으므로 인용수 갱신 시 함께 수정합니다.
-비공개 원본 CV, 개인정보, 회사 내부 자료, 인증 정보는 이 공개 저장소에 넣지 않습니다.
+추가 개인정보, 회사 내부 자료, 인증 정보는 이 공개 저장소에 넣지 않습니다.
