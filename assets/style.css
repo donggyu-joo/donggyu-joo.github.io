@@ -87,3 +87,6 @@ body{overflow-wrap:break-word}.hero>*{min-width:0}
 /* Separate current product work from the research background. */
 .hero .bio p{margin:0}
 .hero .bio p+p{margin-top:14px}
+
+.experience-tools{margin:20px 0 0;font-size:.8125rem;color:var(--muted)}
+.experience-tools span{font-weight:600}
