@@ -15,6 +15,7 @@ body{overflow-wrap:break-word}.hero>*{min-width:0}
 
 /* Employer, deployment summary, and contributions have distinct visual levels. */
 .employment{width:100%}
+.employment+.employment{margin-top:32px;padding-top:32px;border-top:1px solid var(--line)}
 .employment-heading{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:24px;margin-bottom:22px}
 .employment-heading h3{font-size:1.25rem;font-weight:600;line-height:1.4;margin:0 0 5px}
 .employment-role{font-size:.9375rem;line-height:1.55;margin:0;color:var(--muted)}
