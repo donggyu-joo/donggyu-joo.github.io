@@ -75,10 +75,7 @@ home=f'''
 <div><h3>Samsung Research</h3><p class="employment-role">Senior Machine Learning Scientist · Samsung Electronics</p></div>
 <p class="employment-meta">Sep 2022 – Oct 2026<span>Seoul, South Korea</span></p>
 </header>
-<div class="employment-impact" aria-label="Production deployment">
-<div class="impact-stat"><p class="impact-count">8 models shipped</p><p class="impact-label">On-device AI · Galaxy devices</p></div>
-<div class="impact-context"><p>Deployed on tens of millions of Galaxy devices.</p></div>
-</div>
+<p class="summary">Developed computer vision and vision-language models for Galaxy smartphones, successfully deploying 8 models for on-device inference.</p>
 <div class="contribution-list">
 <section class="contribution-row"><h4>Gallery Search</h4><p>Deployed on-device image recognition for Galaxy Gallery search and built GenAI-assisted data workflows.</p></section>
 <section class="contribution-row"><h4>Unintended Touch Detection</h4><p>Deployed pocket-touch detection models optimized for real-time mobile CPU inference.</p></section>

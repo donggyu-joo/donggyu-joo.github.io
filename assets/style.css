@@ -21,13 +21,6 @@ body{overflow-wrap:break-word}.hero>*{min-width:0}
 .employment-role{font-size:.9375rem;line-height:1.55;margin:0;color:var(--muted)}
 .employment-meta{font-size:.8125rem;line-height:1.6;color:var(--muted);margin:2px 0 0;text-align:right}
 .employment-meta span{display:block}
-.employment-impact{display:grid;grid-template-columns:minmax(0,12rem) minmax(0,1fr);align-items:center;gap:26px}
-.impact-count{font-size:.9375rem;font-weight:500;line-height:1.55;margin:0 0 5px}
-.impact-label{font-size:.8125rem;color:var(--muted);line-height:1.55;margin:0}
-.impact-context{padding-left:0}
-.impact-context p{font-size:.9375rem;line-height:1.65;margin:0 0 5px}
-.impact-context strong{font-weight:600}
-.impact-context .impact-note{font-size:.8125rem;color:var(--muted);margin:0}
 .contribution-list{margin-top:26px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:40px;row-gap:22px}
 .contribution-row{padding-top:14px;border-top:1px solid var(--line)}
 .contribution-row h4{font-size:.9375rem;font-weight:600;line-height:1.5;margin:0 0 6px}
@@ -36,8 +29,6 @@ body{overflow-wrap:break-word}.hero>*{min-width:0}
  .employment-heading{grid-template-columns:1fr;gap:8px}
  .employment-meta{text-align:left;margin:0}
  .employment-meta span{display:inline;margin-left:12px}
- .employment-impact{grid-template-columns:1fr;gap:12px}
- .impact-context{padding:0}
 }
 @media(max-width:620px){
  .employment-heading{margin-bottom:18px}
