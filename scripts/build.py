@@ -77,13 +77,13 @@ home=f'''
 </header>
 <div class="employment-impact" aria-label="Production deployment">
 <div class="impact-stat"><p class="impact-count">8 models shipped</p><p class="impact-label">On-device AI · Galaxy devices</p></div>
-<div class="impact-context"><p>Deployed on <strong>tens of millions of Galaxy devices</strong>.</p><p class="impact-note">Credited as the developer of the deployed models.</p></div>
+<div class="impact-context"><p>Deployed on tens of millions of Galaxy devices.</p></div>
 </div>
 <div class="contribution-list">
-<section class="contribution-row"><h4>Gallery Search</h4><p>Developed and deployed on-device multi-label image recognition models for Samsung Galaxy Gallery search. Built GenAI-assisted labeling and filtering workflows for multimodal training data.</p></section>
-<section class="contribution-row"><h4>Unintended Touch Detection</h4><p>Developed sequential models to detect unintended pocket touches, optimized for real-time inference on mobile CPUs and deployed on Galaxy devices.</p></section>
-<section class="contribution-row"><h4>Model Efficiency &amp; Reliability</h4><p>Optimized models for on-device deployment through TFLite conversion, latency tuning, and device validation. Resolved edge cases using feedback from real-world use.</p></section>
-<section class="contribution-row"><h4>Technical Leadership</h4><p>Led a team of 6 engineers across data curation, modeling, evaluation, and release, coordinating with product and engineering teams.</p></section>
+<section class="contribution-row"><h4>Gallery Search</h4><p>Deployed on-device image recognition for Galaxy Gallery search and built GenAI-assisted data workflows.</p></section>
+<section class="contribution-row"><h4>Unintended Touch Detection</h4><p>Deployed pocket-touch detection models optimized for real-time mobile CPU inference.</p></section>
+<section class="contribution-row"><h4>Model Efficiency &amp; Reliability</h4><p>Optimized on-device models with TFLite, latency tuning, and validation on devices.</p></section>
+<section class="contribution-row"><h4>Technical Leadership</h4><p>Led 6 engineers from data curation and modeling through evaluation and release.</p></section>
 </div>
 <p class="experience-tools"><span>Tools:</span> PyTorch · TensorFlow · TFLite</p>
 </article>
